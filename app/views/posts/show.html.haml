@@ -1,0 +1,25 @@
+=link_to "Home", root_path
+%p= 'Welcome'
+%p= @post.user.username
+
+%p= image_tag @post.avatar.url(:thumb)
+%h1= @post.name
+
+%p= "Address: "
+%p= @post.address
+
+%p= "Description:"
+%p= @post.description
+
+#comments
+	%h2.comment_count= pluralize(@post.comments.count, "Comment")
+	- @comments.each do |comment|
+		.comment
+			%p.username= comment.user.username
+			%p.content= comment.content
+
+	= render "comments/form"
+
+= link_to "Edit", edit_post_path
+= link_to "Delete Resturant", post_path(@post), method: :delete, data: {confirm: "Are you sure??"}
+= link_to "Home", root_path
