@@ -1,0 +1,18 @@
+=link_to "Home", root_path
+%p= 'Welcome'
+
+%p= image_tag @post.avatar.url(:thumb)
+%h1= @post.name
+
+%p= "Address: "
+%p= @post.address
+
+%p= "Description:"
+%p= @post.description
+
+/ For Comment Using these pluralization
+
+
+=link_to "Edit", edit_post_path(@post)
+=link_to "Delete Resturant", post_path(@post), method: :delete, data: {confirm: "Are you sure??"}
+
