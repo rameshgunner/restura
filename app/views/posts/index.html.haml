@@ -1,8 +1,12 @@
-%h1 Index File
-
-- @post.each do |post|
-	= link_to image_tag post.avatar.url(:thumb).to_s
-
-	%h2= link_to post.name, post
-
-=link_to "Add Resturant", new_post_path
+#posts
+	- @post.each do |post|
+		.post
+			.post_image
+				= link_to image_tag post.avatar.url(:thumb).to_s
+			.post_content
+				.title
+					%h2= link_to post.name, post
+				.data.clearfix
+					%p.username
+						Posted by
+						= post.user&.username || 'N/A'
