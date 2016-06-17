@@ -12,6 +12,11 @@
 * Posts: Post can have many comments and Post belongs to User
 * Comment: Comment belongs to User
 
+<h2>Versions Used</h2>
+  * Ruby 2.3.1
+  * Rails 4.2.6
+  * RVM 1.9.3
+  
 <h2>Gems Used </h2>
 * Devise
 * HAML
@@ -22,6 +27,18 @@
 * bootstrap-rails
 
 <h2>References</h2>
-<p> Since it was a mini-project, it was implemented from different sources and with the help of different people.</p>
+  <p> Since it was a mini-project done for the fulfillment of 2 week training course implementation, it was implemented from different sources and with the help of different people. Thanks to all of the people from Cloud Factory, Kathmandu, Nepal for helping us. </p>
+
+  Special Thanks, 24/7 Friends:
+    * Google.com
+    * Github.com
+    * ruby-doc.org
+    * Stackoverflow.com
+    * rubymonk.com
+    * youtube.com
     
+Inspired from:
+  *mackenziechild 12/12 week challange: Recipe Apps
+  *Ruby on Rails 3 Tutorial by Michael Harlt
   
+
