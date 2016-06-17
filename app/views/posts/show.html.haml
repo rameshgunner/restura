@@ -2,7 +2,7 @@
 	%h1= @post.name
 	%p.username
 		Shared by
-		= @post.user
+		= @post.user&.username || 'N/A'
 	.clearfix
 		.post_image_description
 			= image_tag @post.avatar.url(:thumb)

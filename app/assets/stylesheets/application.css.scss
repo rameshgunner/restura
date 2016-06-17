@@ -1,3 +1,4 @@
+@import "bootstrap";
 
 body {
 	font-family: "Proxima Nova";
@@ -82,7 +83,7 @@ header {
 .login-image{
 	margin-left: auto;
   margin-right: auto;
-  width: 30%;
+  
 }
 .panel {
   border-radius: 8px;
@@ -96,6 +97,10 @@ header {
 		color: #727272;
   }
 }
+
+.panel-body{
+	margin-bottom: 5px;
+}
 .navbar {
   margin-bottom: 0px;
 }
@@ -106,3 +111,5 @@ header {
 
 @import 'comments.css.scss';
 @import 'posts.css.scss';
+@import 'random.css.scss';
+@import 'normalize.css.scss';	
