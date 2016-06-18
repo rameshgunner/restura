@@ -30,8 +30,7 @@ gem 'sass', '~> 3.4', '>= 3.4.22'
 gem 'devise', '~> 4.1', '>= 4.1.1'
 gem 'carrierwave'
 gem "mini_magick"
-
-	
+gem 'bootstrap-sass', '~> 3.3.6'
 
 
 group :development, :test do
