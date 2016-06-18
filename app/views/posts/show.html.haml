@@ -1,3 +1,12 @@
+.show-intro
+	- if user_signed_in?
+		.alert.alert-info
+			Welcome,
+			= link_to current_user.username
+	- else
+		.alert.alert-warning
+			%p Sign In to add reviews
+%br
 #post_show
 	%h1= @post.name
 	%p.username
@@ -6,8 +15,8 @@
 	.clearfix
 		.post_image_description
 			= image_tag @post.avatar.url(:thumb)
-			.address
-				Address:
+			.text-info
+				%br
 				= simple_format(@post.address)
 			.description
 				Details:

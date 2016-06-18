@@ -1,6 +1,13 @@
+- if user_signed_in?
+	.index-intro-in
+		.alert.alert-success
+			%p Welcome to CloudFactory Resturant Application
+- else
+	.index-intro-out
+		.alert.alert-warning
+			%p Seems you are not Logged In !!
+%br
 #posts
-	.post-title
-		%h2 Welcome to CF Resturant
 	- @post.each do |post|
 		.post
 			.post_image

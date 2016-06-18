@@ -35,6 +35,7 @@ h1, h2, h3, h4, h5, h6 {
 header {
 	width: 100%;
 	padding: 2rem 0;
+	background: #eee !important;	
 	border-bottom: 1px solid #E4E4E4;
 	#logo {
 		img {
@@ -73,13 +74,6 @@ header {
   background-size: cover;
 }
 
-.log-in{
-  margin-left: auto;
-  margin-right: auto;
-  text-align:center;
-  border: none;
-}
-
 .login-image{
 	margin-left: auto;
   margin-right: auto;
@@ -87,20 +81,22 @@ header {
 }
 .panel {
   border-radius: 8px;
+     box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.05);
 }
 
 .panel-heading{
   h2 {
     text-align: center;
     font-weight: 100;
-		font-family: futura;
-		color: #727272;
+	font-family: helvetica;
+	color: #727272;
   }
 }
 
 .panel-body{
 	margin-bottom: 5px;
 }
+
 .navbar {
   margin-bottom: 0px;
 }
@@ -109,6 +105,39 @@ header {
   margin-bottom: 0px;
 }
 
+.form-error{
+	margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+.form-update{
+	margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.unhappy{
+	margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.show-intro{
+	margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+.index-intro-in{
+	margin-left: auto;
+  margin-right: auto;
+  width: 36%;
+}
+.index-intro-out{
+	margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+.bread-back{
+	float: right;
+}
 @import 'comments.css.scss';
 @import 'posts.css.scss';
 @import 'random.css.scss';

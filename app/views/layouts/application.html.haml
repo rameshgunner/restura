@@ -14,8 +14,7 @@
 				= link_to image_tag("restura.png"), root_path
 			%nav
 				- if user_signed_in?
-					Welcome,	
-					= link_to current_user.username, edit_user_registration_path
+					= link_to "Edit Profile", edit_user_registration_path
 					= link_to "Sign Out", destroy_user_session_path, method: :delete, class: 'button'
 				- else
 					= link_to "Sign In", new_user_session_path, class: "button"
@@ -23,4 +22,5 @@
 	%p.notice= notice
 	%p.alert= alert
 	.wrapper
+		= render 'layouts/messages' 
 		= yield
