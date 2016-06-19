@@ -2,6 +2,9 @@
 	.index-intro-in
 		.alert.alert-success
 			%p Welcome to CloudFactory Resturant Application
+		%br
+		.index-intro-button
+			= link_to "Add Resturant", new_post_path, class: "button"
 - else
 	.index-intro-out
 		.alert.alert-warning
