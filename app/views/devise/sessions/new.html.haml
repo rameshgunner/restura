@@ -4,7 +4,7 @@
       .col-md-4.col-md-offset-4
         .log-in.panel
           .login-image
-            = link_to image_tag("restura.png"), root_path
+            = link_to image_tag("Restura.png"), root_path
           .panel-heading
             %h2 Log In
           = simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
@@ -13,7 +13,8 @@
               %br
               = f.input :password, required: true, label: false, placeholder: 'Password', input_html: { class: 'form-control' }
               %br
-              = f.input :remember_me, class: 'rememberMe', as: :boolean if devise_mapping.rememberable?
+              .remember-me
+                = f.input :remember_me, class: 'rememberMe', as: :boolean if devise_mapping.rememberable?
               %br
               = f.button :submit, "Log In", class: 'btn btn-lg btn-primary btn-block'
 

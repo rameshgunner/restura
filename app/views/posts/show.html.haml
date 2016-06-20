@@ -25,8 +25,8 @@
 			%p.data
 				%i.fa.fa-comments-o
 				= pluralize(@post.comments.count, "Review")
-			= link_to "Edit Resturant Details", edit_post_path(@post), class: "data"
-			= link_to "Delete Resturant", post_path(@post), method: :delete, data: { confirm: "Are you sure?" }, class: "data"
+			= link_to "Edit Restaurant Details", edit_post_path(@post), class: "data"
+			= link_to "Delete Restaurant", post_path(@post), method: :delete, data: { confirm: "Are you sure?" }, class: "data"
 	.clearfix.wrapper
 
 

@@ -74,16 +74,18 @@ header {
   background-size: cover;
 }
 
-.login-image{
-	margin-left: auto;
-  margin-right: auto;
-  
+.login-image img{
+	width: 80%;
+	margin-left: 40px;
 }
+
 .panel {
   border-radius: 8px;
      box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.05);
 }
-
+.remember-me{
+	margin-left: 20px;
+}
 .panel-heading{
   h2 {
     text-align: center;
@@ -128,12 +130,12 @@ header {
 .index-intro-in{
 	margin-left: auto;
   margin-right: auto;
-  width: 36%;
+  width: 38%;
 }
 .index-intro-out{
 	margin-left: auto;
   margin-right: auto;
-  width: 25%;
+  width: 27%;
 }
 .index-intro-button
 {
