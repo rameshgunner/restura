@@ -26,7 +26,7 @@
 * MiniMagick
 * bootstrap-rails
 * acts_as_votable
-* * SearchKick
+* SearchKick
 <h2>References</h2>
   <p> Since it was a mini-project done for the fulfillment of 2 week training course implementation, it was implemented from different sources and with the help of different people. Thanks to all of the people from Cloud Factory, Kathmandu, Nepal for helping us. </p>
 
