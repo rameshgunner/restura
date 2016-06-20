@@ -31,6 +31,7 @@ gem 'devise', '~> 4.1', '>= 4.1.1'
 gem 'carrierwave'
 gem "mini_magick"
 gem 'bootstrap-sass', '~> 3.3.6'
+gem 'acts_as_votable', '~> 0.10.0'
 
 
 group :development, :test do

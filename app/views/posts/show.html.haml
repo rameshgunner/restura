@@ -23,6 +23,11 @@
 				= simple_format(@post.description)
 		.post_data
 			%p.data
+				%i.fa.fa-thumbs-up
+					= link_to "Like", like_post_path(@post), method: :get
+				%i.fa.fa-thumbs-down
+					= link_to "Dislike", dislike_post_path(@post), method: :get
+				%br
 				%i.fa.fa-comments-o
 				= pluralize(@post.comments.count, "Review")
 			= link_to "Edit Resturant Details", edit_post_path(@post), class: "data"
@@ -34,6 +39,13 @@
 
 
 #comments
+	%p
+		%i.fa.fa-thumbs-up
+			= @post.get_upvotes.size
+			Likes
+		%i.fa.fa-thumbs-down
+			= @post.get_downvotes.size
+			Dislikes
 	= pluralize(@post.comments.count, "Review")
 	- @comments.each do |comment|
 		.comment

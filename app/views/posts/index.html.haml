@@ -22,3 +22,7 @@
 					%p.username
 						Posted by
 						= post.user&.username || 'N/A'
+				.data.clearfix
+					%i.fa.fa-thumbs-up
+						= post.get_likes.size
+						Likes
